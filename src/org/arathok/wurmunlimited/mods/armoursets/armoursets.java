@@ -1,6 +1,7 @@
 package org.arathok.wurmunlimited.mods.armoursets;
 
 import com.wurmonline.server.creatures.Communicator;
+import com.wurmonline.server.spells.Spells;
 import org.gotti.wurmunlimited.modloader.interfaces.*;
 import com.wurmonline.server.creatures.SpellEffects;
 import com.wurmonline.server.players.Player;
@@ -24,10 +25,12 @@ public class armoursets implements WurmServerMod, Initable, PreInitable, Configu
     @Override
     public void onServerPoll() {
     Player p;
+    Spells test;
     long wurmId = 0;
         p = Players.getInstance().getPlayerOrNull(wurmId);
     if (p.getArmourType()==null)
     {
+
     }
 
     }
